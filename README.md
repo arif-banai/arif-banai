@@ -1,5 +1,9 @@
 # Hi, I'm Arif 👋
 
+> A backend/software engineer focused on Java, Python, distributed systems, developer tooling, and open source.
+
+I enjoy building reliable systems, improving developer workflows, and maintaining practical software that people actually use.
+
 ![Java](https://img.shields.io/badge/Java-000?logo=openjdk)
 ![Python](https://img.shields.io/badge/Python-000?logo=python)
 ![Docker](https://img.shields.io/badge/Docker-000?logo=docker)
@@ -13,9 +17,9 @@
 
 *Can be updated via GitHub Actions. To regenerate locally, see [scripts/README.md](scripts/README.md).*
 
-A backend/software engineer focused on Java, Python, distributed systems, developer tooling, and open source.
 
-I enjoy building reliable systems, improving developer workflows, and maintaining practical software that people actually use.
+
+
 
 ## Currently Working On
 
