@@ -1,5 +1,11 @@
 ## Hi there 👋
 
+### Statistics
+
+![GitHub Stats](./assets/github-stats.svg)
+
+*Can be updated via GitHub Actions. To regenerate locally, see [scripts/README.md](scripts/README.md).*
+
 <!--
 **arif-banai/arif-banai** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 

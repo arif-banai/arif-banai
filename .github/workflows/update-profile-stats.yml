@@ -1,0 +1,44 @@
+# Self-contained GitHub profile stats card: fetch stats and render SVG.
+# Runs on manual trigger and daily; commits only if assets/github-stats.svg changed.
+name: Update profile stats
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 6 * * *'  # Daily at 06:00 UTC
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # needed to push the updated SVG
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Fetch GitHub stats
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USERNAME: ${{ github.repository_owner }}
+        run: python scripts/fetch_stats.py
+
+      - name: Render stats SVG
+        run: python scripts/render_stats_svg.py
+
+      - name: Commit and push if SVG changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/github-stats.svg
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore: update profile stats SVG"
+            git push
+          fi
