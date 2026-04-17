@@ -4,7 +4,7 @@
   <g transform="translate(20, 42)">
     <polygon points="8.0,0 9.6,5.6 16,8.0 9.6,10.4 8.8,16 8.0,9.6 7.2,16 6.4,10.4 0,8.0 6.4,5.6" fill="#8b949e" />
     <text x="24" y="12" font-family="system-ui, sans-serif" font-size="13" fill="#8b949e">Stars (my repos)</text>
-    <text x="300" y="12" text-anchor="end" font-family="system-ui, monospace" font-size="13" font-weight="600" fill="#e6edf3">99</text>
+    <text x="300" y="12" text-anchor="end" font-family="system-ui, monospace" font-size="13" font-weight="600" fill="#e6edf3">100</text>
   </g>
   <g transform="translate(20, 68)">
     <circle cx="8.0" cy="8.0" r="4.0" fill="none" stroke="#8b949e" stroke-width="2"/>
